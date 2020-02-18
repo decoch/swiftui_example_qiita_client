@@ -12,8 +12,11 @@ struct ItemList: View {
     @ObservedObject var fetcher = ApiFetcher()
     
     var body: some View {
-        List(fetcher.items) { item in
-            Text(item.title)
+        VStack {
+            TextFiel
+            List(fetcher.items) { item in
+                Text(item.title)
+            }
         }
     }
 }

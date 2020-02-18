@@ -10,10 +10,10 @@ import Foundation
 class ApiFetcher: ObservableObject {
     @Published var items = [Item]()
     
-    private let baseURL = "http://qiita.com/api/v2"
+    private let baseURL = "https://qiita.com/api/v2"
     
-    init(){
-        fetchItems(query: "")
+    init() {
+        fetchItems(query: "react")
     }
     
     func fetchItems(query: String) {
