@@ -6,14 +6,16 @@
 //
 
 import SwiftUI
-import Request
 
 struct ItemList: View {
     @ObservedObject var fetcher = ApiFetcher()
+    @State var keyword: String = ""
     
     var body: some View {
         VStack {
-            TextFiel
+            TextField("Username", text: $keyword) {
+                self.fetcher.fetchItems(query: self.keyword)
+            }
             List(fetcher.items) { item in
                 Text(item.title)
             }
