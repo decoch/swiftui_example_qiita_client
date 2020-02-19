@@ -12,10 +12,6 @@ class ApiFetcher: ObservableObject {
     
     private let baseURL = "https://qiita.com/api/v2"
     
-    init() {
-        fetchItems(query: "react")
-    }
-    
     func fetchItems(query: String) {
         let url = URL(string: "\(baseURL)/items?query=\(query)&page=1&per_page=50")!
     
