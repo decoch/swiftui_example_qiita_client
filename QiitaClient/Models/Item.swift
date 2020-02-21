@@ -12,8 +12,5 @@ struct Item: Decodable, Identifiable {
     let title: String
     let body: String?
     let url: String
-    let comments_count: Int?
-    let likes_count: Int?
-    let created_at: String?
-    let user: User?
+    let user: User
 }

@@ -19,9 +19,9 @@
 		B709542F23FBC65D00486BED /* ItemList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B709542E23FBC65D00486BED /* ItemList.swift */; };
 		B709543323FBC6FE00486BED /* ItemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B709543223FBC6FE00486BED /* ItemDetail.swift */; };
 		B709543523FBC82100486BED /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B709543423FBC82100486BED /* User.swift */; };
-		B709543823FBD3DB00486BED /* Json in Frameworks */ = {isa = PBXBuildFile; productRef = B709543723FBD3DB00486BED /* Json */; };
-		B709543A23FBD3DB00486BED /* Request in Frameworks */ = {isa = PBXBuildFile; productRef = B709543923FBD3DB00486BED /* Request */; };
 		B709543D23FBD67700486BED /* ApiFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B709543C23FBD67700486BED /* ApiFetcher.swift */; };
+		B709544023FFA66900486BED /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = B709543F23FFA66900486BED /* URLImage */; };
+		B709544223FFA69200486BED /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B709544123FFA69200486BED /* ItemRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +61,7 @@
 		B709543223FBC6FE00486BED /* ItemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetail.swift; sourceTree = "<group>"; };
 		B709543423FBC82100486BED /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B709543C23FBD67700486BED /* ApiFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiFetcher.swift; sourceTree = "<group>"; };
+		B709544123FFA69200486BED /* ItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,8 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B709543A23FBD3DB00486BED /* Request in Frameworks */,
-				B709543823FBD3DB00486BED /* Json in Frameworks */,
+				B709544023FFA66900486BED /* URLImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +167,7 @@
 			children = (
 				B709542E23FBC65D00486BED /* ItemList.swift */,
 				B709543223FBC6FE00486BED /* ItemDetail.swift */,
+				B709544123FFA69200486BED /* ItemRow.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -196,8 +197,7 @@
 			);
 			name = QiitaClient;
 			packageProductDependencies = (
-				B709543723FBD3DB00486BED /* Json */,
-				B709543923FBD3DB00486BED /* Request */,
+				B709543F23FFA66900486BED /* URLImage */,
 			);
 			productName = QiitaClient;
 			productReference = B70953F723FBC1FD00486BED /* QiitaClient.app */;
@@ -271,7 +271,7 @@
 			);
 			mainGroup = B70953EE23FBC1FD00486BED;
 			packageReferences = (
-				B709543623FBD3DB00486BED /* XCRemoteSwiftPackageReference "swift-request" */,
+				B709543E23FFA66900486BED /* XCRemoteSwiftPackageReference "url-image" */,
 			);
 			productRefGroup = B70953F823FBC1FD00486BED /* Products */;
 			projectDirPath = "";
@@ -316,6 +316,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B709544223FFA69200486BED /* ItemRow.swift in Sources */,
 				B709543323FBC6FE00486BED /* ItemDetail.swift in Sources */,
 				B709542D23FBC31700486BED /* Item.swift in Sources */,
 				B709543D23FBD67700486BED /* ApiFetcher.swift in Sources */,
@@ -644,26 +645,21 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		B709543623FBD3DB00486BED /* XCRemoteSwiftPackageReference "swift-request" */ = {
+		B709543E23FFA66900486BED /* XCRemoteSwiftPackageReference "url-image" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/carson-katri/swift-request";
+			repositoryURL = "https://github.com/dmytro-anokhin/url-image.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.2.2;
+				minimumVersion = 0.9.10;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		B709543723FBD3DB00486BED /* Json */ = {
+		B709543F23FFA66900486BED /* URLImage */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = B709543623FBD3DB00486BED /* XCRemoteSwiftPackageReference "swift-request" */;
-			productName = Json;
-		};
-		B709543923FBD3DB00486BED /* Request */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B709543623FBD3DB00486BED /* XCRemoteSwiftPackageReference "swift-request" */;
-			productName = Request;
+			package = B709543E23FFA66900486BED /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

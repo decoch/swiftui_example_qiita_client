@@ -2,12 +2,12 @@
   "object": {
     "pins": [
       {
-        "package": "Request",
-        "repositoryURL": "https://github.com/carson-katri/swift-request",
+        "package": "URLImage",
+        "repositoryURL": "https://github.com/dmytro-anokhin/url-image.git",
         "state": {
           "branch": null,
-          "revision": "8d297a4cb8913beb463843c99751fd5671b35cef",
-          "version": "1.2.2"
+          "revision": "dc913391b6fc0c9de283ef111eb90d0e9abf4c36",
+          "version": "0.9.10"
         }
       }
     ]

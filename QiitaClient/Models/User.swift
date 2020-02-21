@@ -8,5 +8,5 @@
 import Foundation
 
 struct User: Decodable {
-    let profileImageUrl: String?
+    let profileImageUrl: String
 }

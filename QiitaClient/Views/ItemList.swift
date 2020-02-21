@@ -26,7 +26,7 @@ struct ItemList: View {
                             url: item.url
                         )
                     ) {
-                        Text(item.title)
+                        ItemRow(item: item)
                     }
                 }
             }
