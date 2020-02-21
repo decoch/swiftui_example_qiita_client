@@ -9,8 +9,12 @@ import SwiftUI
 import WebKit
 
 struct ItemDetail: View {
+    let title: String
+    let url: String
+
     var body: some View {
-        WebView(url: URL(string: "https://www.apple.com")!)
+        WebView(url: URL(string: url)!)
+        .navigationBarTitle(Text(title))
     }
 }
 
@@ -29,6 +33,6 @@ struct WebView : UIViewRepresentable {
 
 struct ItemDetail_Previews: PreviewProvider {
     static var previews: some View {
-        ItemDetail()
+        ItemDetail(title: "テスト", url: "https://www.apple.com")
     }
 }
