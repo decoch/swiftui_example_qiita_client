@@ -20,12 +20,13 @@ struct ItemList: View {
                 }.padding(16)
                 
                 List(fetcher.items) { item in
-                    Button(action: {
-                        self.showingDetail.toggle()
-                    }) {
+                    NavigationLink(
+                        destination: ItemDetail(
+                            title: item.title,
+                            url: item.url
+                        )
+                    ) {
                         Text(item.title)
-                    }.sheet(isPresented: self.$showingDetail) {
-                        ItemDetail(title: item.title, url: item.url)
                     }
                 }
             }

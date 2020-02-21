@@ -14,7 +14,7 @@ struct ItemDetail: View {
 
     var body: some View {
         WebView(url: URL(string: url)!)
-        .navigationBarTitle(Text(title))
+        .navigationBarTitle(Text(title), displayMode: .inline)
     }
 }
 
